@@ -1,9 +1,10 @@
 console.log(albums[0].images[0].url);
+var sideLinks = $('.sideLinks');
+var header = $('.page-header');
+var content = $('.content');
 
-var div = $('<div></div>');
-var album1 = $('<img class="pic" src='+albums[0].images[0].url+'><span>Album 1</span>');
+
+//testing to get album 1 preview on the page:
+var album1 = $('<div><img class="pic" src='+albums[0].images[0].url+'><span>Album 1</span></div>');
 console.log(album1);
-
-console.log(div);
-
-div.append(album1);
+content.append(album1);

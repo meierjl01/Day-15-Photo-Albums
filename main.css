@@ -4,7 +4,41 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-body img {
-  max-width: 100%; }
+body {
+  margin-top: -2em;
+  background: #DDCFB7; }
+  body img {
+    max-width: 100%; }
+
+h1 {
+  text-align: center;
+  padding: 1.5em;
+  color: #383332; }
+
+.content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2em;
+  padding-left: 5em; }
+  .content::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .content::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .content a {
+    text-decoration: none;
+    color: #383332;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    text-align: center;
+    width: 30%; }
+    .content a:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+  padding: 1.5em;
+  color: $color-secondary;
+}
+
+.content {
+  @include outer-container;
+  @include clearfix;
+  padding-right: 2em;
+  padding-left: 5em;
+  a {
+    text-decoration: none;
+    color: $color-secondary;
+    @include span-columns (3);
+    text-align: center;
+    width: 30%;
+  }
+}

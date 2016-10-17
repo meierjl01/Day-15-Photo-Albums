@@ -29,9 +29,16 @@ albums.forEach(function(album, i, arr) {
 
 //per Max: you can use a hashchange event instead of click event -- says look at the whole window and if the hash changes, it needs to run a specific function. within that, it either needs to go to a specific album or a specific picture or to the main home page (3 different functions).
 
+
 var previewItem = $('.previewItem');
 previewItem.on('click', function(e) {
 
+
+//nav bar code (needs styling):
+  albums.forEach(function(album, i, arr) {
+    var navs = $('<a href="#' + album.albumName + '"><button>' + album.albumName + '</button></a>');
+        sideLinks.append(navs);
+  });
 
   function pickAlbum (album, i, arr) {
     return album.albumName === 'One';
@@ -40,6 +47,10 @@ previewItem.on('click', function(e) {
 
   //   if (album.albumName === 'One') {
   //     return album.albumName;
+
+//ideally, run more functions in here, within the if statement. build a nav funciton?
+
+
   //   }
   //   else if (album.albumName === 'Two') {
   //     return album.albumName;
@@ -81,9 +92,14 @@ albums.forEach(function(album, i, arr) {
 
 //how to get it to go back to home, move to just one image
 
-//nav?
-  // albums.forEach(function(album, i, arr) {
-  //   var navs = $('<a href="#' + album.albumName + '"><button>' + album.albumName + '</button></a>');
-  //       sideLinks.append(navs);
-  // });
+
 });
+
+
+//window/hashchange example:
+// $(window).on('hashchange', function() {
+//   alert('whaddop');
+//   if ($window.location.hash.indexOf('%') !== -1)
+//     print album images
+//
+// });

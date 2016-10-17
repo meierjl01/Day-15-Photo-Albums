@@ -6,7 +6,6 @@ h1 {
 
 .content {
   @include outer-container;
-  @include clearfix;
   padding-right: 2em;
   padding-left: 5em;
   a {

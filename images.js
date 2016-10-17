@@ -1,3 +1,5 @@
+//per Max, you can't have # for more than one hash, so you can use the $ or the %
+
 var albums = [{
     'albumName': 'One',
     'albumPreview': 'images/1.jpg',
@@ -5,15 +7,15 @@ var albums = [{
     'images': [{
         'url': 'images/1.jpg',
         'imageName': 'img1',
-        'hash': '#pictureOne',
+        'hash': '%pictureOne',
     }, {
         'url': 'images/2.jpg',
         'imageName': 'img2',
-        'hash': '#pictureTwo',
+        'hash': '%pictureTwo',
     }, {
         'url': 'images/3.jpeg',
         'imageName': 'img3',
-        'hash': '#pictureThree',
+        'hash': '%pictureThree',
     }]
 }, {
     'albumName': 'Two',
@@ -22,15 +24,15 @@ var albums = [{
     'images': [{
         'url': 'images/4.jpeg',
         'imageName': 'img4',
-        'hash': '#pictureFour',
+        'hash': '%pictureFour',
     }, {
         'url': 'images/5.jpeg',
         'imageName': 'img5',
-        'hash': '#pictureFive',
+        'hash': '%pictureFive',
     }, {
         'url': 'images/6.jpeg',
         'imageName': 'img6',
-        'hash': '#pictureSix',
+        'hash': '%pictureSix',
     }]
 }, {
     'albumName': 'Three',
@@ -39,15 +41,15 @@ var albums = [{
     'images': [{
         'url': 'images/7.jpeg',
         'imageName': 'img7',
-        'hash': '#pictureSeven',
+        'hash': '%pictureSeven',
     }, {
         'url': 'images/8.jpeg',
         'imageName': 'img8',
-        'hash': '#pictureEight',
+        'hash': '%pictureEight',
     }, {
         'url': 'images/9.jpeg',
         'imageName': 'img9',
-        'hash': '#pictureNine',
+        'hash': '%pictureNine',
     }]
 }, {
     'albumName': 'Four',
@@ -56,15 +58,15 @@ var albums = [{
     'images': [{
         'url': 'images/10.jpeg',
         'imageName': 'img10',
-        'hash': '#pictureTen',
+        'hash': '%pictureTen',
     }, {
         'url': 'images/11.jpeg',
         'imageName': 'img11',
-        'hash': '#pictureEleven',
+        'hash': '%pictureEleven',
     }, {
         'url': 'images/12.jpeg',
         'imageName': 'img12',
-        'hash': '#pictureTwelve',
+        'hash': '%pictureTwelve',
     }]
 }, {
     'albumName': 'Five',
@@ -73,15 +75,15 @@ var albums = [{
     'images': [{
         'url': 'images/13.jpeg',
         'imageName': 'img13',
-        'hash': '#pictureThirteen',
+        'hash': '%pictureThirteen',
     }, {
         'url': 'images/14.jpeg',
         'imageName': 'img14',
-        'hash': '#pictureFourteen',
+        'hash': '%pictureFourteen',
     }, {
         'url': 'images/15.jpeg',
         'imageName': 'img15',
-        'hash': '#pictureFifteen',
+        'hash': '%pictureFifteen',
     }]
 }, {
     'albumName': 'Six',
@@ -90,14 +92,14 @@ var albums = [{
     'images': [{
         'url': 'images/16.jpeg',
         'imageName': 'img16',
-        'hash': '#pictureSixteen',
+        'hash': '%pictureSixteen',
     }, {
         'url': 'images/17.jpeg',
         'imageName': 'img17',
-        'hash': '#pictureSeventeen',
+        'hash': '%pictureSeventeen',
     }, {
         'url': 'images/18.jpeg',
         'imageName': 'img18',
-        'hash': '#pictureEighteen',
+        'hash': '%pictureEighteen',
     }]
 }];

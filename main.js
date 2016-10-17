@@ -1,4 +1,6 @@
 // console.log(albums[0].images[0].url);
+// console.dir(window);
+
 var sideLinks = $('.sideLinks');
 var header = $('.page-header');
 var content = $('.content');
@@ -22,27 +24,53 @@ albums.forEach(function(album, i, arr) {
 
 //on a click event, for each loop for album pictures to be displayed:
 
-function pickAlbum (album, i, arr) {
-  return album.albumName === 'One';
-}
 
-function albumPics (album, i, arr) {
-  return album.images;
-}
-  var chooseAlbum = albums.filter(pickAlbum);
-  console.log(chooseAlbum);
 
-  var albumImages = albums.map(albumPics);
-  console.log(albumImages);
 
-function pickImage (header, content) {
-  console.log('hi');
-}
-
-pickImage(header,content);
+//per Max: you can use a hashchange event instead of click event -- says look at the whole window and if the hash changes, it needs to run a specific function. within that, it either needs to go to a specific album or a specific picture or to the main home page (3 different functions).
 
 var previewItem = $('.previewItem');
 previewItem.on('click', function(e) {
+
+
+  function pickAlbum (album, i, arr) {
+    return album.albumName === 'One';
+
+//to target one specific Album:
+
+  //   if (album.albumName === 'One') {
+  //     return album.albumName;
+  //   }
+  //   else if (album.albumName === 'Two') {
+  //     return album.albumName;
+  //   }
+  //   else if (album.albumName === 'Three') {
+  //     return album.albumName;
+  //   }
+  //   else if (album.albumName === 'Four') {
+  //     return album.albumName;
+  //   }
+  //   else if (album.albumName === 'Five') {
+  //     return album.albumName;
+  //   }
+  //   else if (album.albumName === 'Six') {
+  //     return album.albumName;
+  // }
+}
+
+  function albumPics (album, i, arr) {
+    return album.images;
+  }
+    var chooseAlbum = albums.filter(pickAlbum);
+    console.log(chooseAlbum);
+
+    var albumImages = albums.map(albumPics);
+    console.log(albumImages);
+
+  function pickImage (header, content) {
+    console.log('hi');
+  }
+
     console.log('hi');
     content.empty();
 
@@ -51,25 +79,11 @@ albums.forEach(function(album, i, arr) {
       content.append(albumItems);
     });
 
+//how to get it to go back to home, move to just one image
+
+//nav?
+  // albums.forEach(function(album, i, arr) {
+  //   var navs = $('<a href="#' + album.albumName + '"><button>' + album.albumName + '</button></a>');
+  //       sideLinks.append(navs);
+  // });
 });
-
-
-
-
-// var album1 = albums.filter(function(album, i, arr) {
-//   if (album.albumName === 'One') {
-//     return true;
-//   }
-// });
-// console.log(album1);
-//
-// var album1Images = album1.filter(function(image, i, arr) {
-//   if (image.)
-// });
-
-
-
-    // albums.forEach(function(album, i, arr) {
-    //   var albumpicItem = $('<a href="' + album[0].images.hash +'">< img src = "' + album[0].images[i].url + '" /img><h2>' + album[0].albumName + '</h2></a>');
-    //   content.append(albumpicItem);
-    // });
